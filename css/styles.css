@@ -1,0 +1,173 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-bold";
+}
+
+p {
+  color: #afafaf
+}
+
+/* Headings */
+.big-heading {
+  font-family: "Montserrat-black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+  /* 0 to top 0 to left and right and only padding at bottom is what this means */
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+  /* Spacing between the nav words left and right */
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+  /* top right left bottom */
+}
+
+/* Title Section  */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Title Image */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* Features Section */
+#features {
+  /*z-index: 1;  Remember when used z-index, have to specify position */
+  position: relative;
+  /* Remember absolute postion takes any html element out of the flow of the document. relative follows the natural flow of html document */
+}
+
+/* we don't need z-index in this case becasue by default of html flow, the hmtl that comes after is naturally the one on top. Something like that */
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.feature-box {
+  padding: 5%
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  /*This will make the img smaller */
+  margin: 20px 20px 50px;
+  /*top left and right then bottom. Gives space between each logo and other sections.  */
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+  /* 3 top and bottom 2 left and right */
+}
+
+/* Footer Section */
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* These are called CSS breakpoints. for finetuning responsivness of site, you use this. */
+@media (max-width: 1028px) {
+
+  /*The width size refers to the viewport or size of the screen currently being viewed This means when vieport is 1028 px or smaller code inside changes*/
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    /* o rotates img back to straight up */
+  }
+}
